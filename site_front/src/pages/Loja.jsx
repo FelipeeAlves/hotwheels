@@ -8,7 +8,7 @@ function Loja() {
 
   const carregarProdutos = async () => {
     try {
-      const resposta = await fetch('https://hotwheels-backend.onrender.com/api/produtos');
+      const resposta = await fetch('https://hotwheels-backend-3y99.onrender.com/api/produtos');
       const dados = await resposta.json();
       setProdutos(dados);
     } catch (erro) {
@@ -23,7 +23,7 @@ function Loja() {
   // 🛠️ FUNÇÃO ATUALIZADA: Salva no Banco de Dados E envia para o WhatsApp!
   const handleCompra = async (nomeProduto, precoProduto) => {
     try {
-      const resposta = await fetch('https://hotwheels-backend.onrender.com/api/pedidos', {
+      const resposta = await fetch('https://hotwheels-backend-3y99.onrender.com/api/pedidos', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ produtoNome: nomeProduto, preco: precoProduto }),
