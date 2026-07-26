@@ -14,7 +14,13 @@ import upload from './config/multer.js';
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173', 
+    'https://hotwheels-frontend.vercel.app' // substitua pela URL exata do seu front na Vercel se for diferente
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 const MONGO_URI = process.env.MONGO_URI;
