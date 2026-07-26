@@ -90,7 +90,7 @@ function Loja() {
           <input 
             className="busca-input"
             type="text" 
-            placeholder="🔎 Procurar Hotwheels" 
+            placeholder="🔎 Procurar Hotwheels por marca" 
             value={busca}
             onChange={(e) => setBusca(e.target.value)}
           />
