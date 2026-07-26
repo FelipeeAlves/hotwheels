@@ -15,11 +15,9 @@ import upload from './config/multer.js';
 const app = express();
 
 app.use(cors({
-  origin: [
-    'http://localhost:5173', 
-    'https://hotwheels-frontend.vercel.app' // substitua pela URL exata do seu front na Vercel se for diferente
-  ],
-  credentials: true
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
