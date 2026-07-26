@@ -67,11 +67,11 @@ function Loja() {
       <header className="loja-header">
         <div className="loja-brand-container">
           <img 
-            src="/logo-hotwheels.jpg"
+            src="/logo-hotwheels.png"
             alt="carrinhos Hotwheels" 
             className="loja-logo"
           />
-          <h1 className="loja-title">Hotwheels</h1>
+          <h1 className="loja-title">HOTWHEELS GARAGE</h1>
         </div>
         
         {/* BOTÕES DE CATEGORIA */}
@@ -85,7 +85,7 @@ function Loja() {
 
         {/* CONTAINER DA FRASE + CAMPO DE BUSCA */}
         <div className="loja-subheader-busca">
-          <p className="loja-subtitle-frase">Modelos exclusivos para quem vive a paixão por HotWheels.</p>
+          <p className="loja-subtitle-frase">Modelos exclusivos para quem vive a paixão por Hotwheels.</p>
           
           <input 
             className="busca-input"
@@ -99,7 +99,7 @@ function Loja() {
 
       <main className="vitrine-container">
         <h2 className="vitrine-title">
-          {categoriaAtiva === 'Todos' ? 'Acelere sua coleção com os melhores HotWheels!' : `Modelos de ${categoriaAtiva}`}
+          {categoriaAtiva === 'Todos' ? 'Acelere sua coleção com os melhores Hotwheels!' : `Modelos de ${categoriaAtiva}`}
         </h2>
 
         <div className="grid-produtos">
@@ -110,7 +110,7 @@ function Loja() {
               <div key={item._id} className="produto-card">
                 <img src={item.imagem} alt={item.nome} className="produto-imagem" />
                 <h3 className="produto-nome">{item.nome}</h3>
-                <p className="produto-detalhe">Tamanho: {item.tamanho} cm</p>
+                <p className="produto-detalhe">Marca: {item.tamanho}</p>
                 <p className="produto-preco">R$ {item.preco}</p>
                 
                 {/* O seu botão continua chamando a handleCompra, mas agora com superpoderes! */}
