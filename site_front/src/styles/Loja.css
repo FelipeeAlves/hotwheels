@@ -237,13 +237,13 @@
   }
 
   .loja-header {
-  background-color: #ffe3e3 !important; /* Força o cabeçalho pastel */
+  background-color: #979798 !important; /* Força o cabeçalho pastel */
   align-items: center !important;
   }
 
   .loja-container {
   color: #333333 !important; /* Força o texto escuro padrão */
-  background-color: #2302ff !important; /* Força o fundo rosinha claro */
+  background-color: #828282 !important; /* Força o fundo rosinha claro */
   align-items: center !important;
   }
 
